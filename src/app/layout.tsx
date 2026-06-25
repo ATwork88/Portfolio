@@ -20,15 +20,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "Senior Full Stack Developer, AI Engineer, Automation Architect",
-    template: "%s | Systems Architect",
+    default: "Ajay Thakur | Full Stack Developer & AI/Automation Engineer",
+    template: "%s | Ajay Thakur",
   },
   description:
-    "Premium portfolio for a senior full stack developer building AI systems, automation platforms, and scalable software architecture.",
+    "Ajay Thakur is a full stack developer and AI automation engineer building React, Python, SaaS, CRM, and workflow automation systems.",
   openGraph: {
-    title: "I build systems that eliminate manual work.",
+    title: "Ajay Thakur - I build systems that eliminate manual work.",
     description:
-      "AI, automation, and software architecture for businesses replacing manual processes with scalable systems.",
+      "Full stack development, AI integration, CRM automation, SaaS architecture, and business workflow automation.",
     type: "website",
   },
   robots: {

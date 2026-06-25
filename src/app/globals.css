@@ -33,6 +33,21 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgb(var(--ink) / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--ink) / 0.035) 1px, transparent 1px),
+    linear-gradient(rgb(var(--ink) / 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--ink) / 0.02) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 32px 32px, 32px 32px;
+  background-position: center top;
+}
+
 ::selection {
   background: rgb(var(--ink));
   color: rgb(var(--canvas));
@@ -41,6 +56,13 @@ body {
 .noise {
   background-image: radial-gradient(rgb(var(--ink) / 0.045) 1px, transparent 1px);
   background-size: 22px 22px;
+}
+
+.grid-panel {
+  background-image:
+    linear-gradient(rgb(var(--ink) / 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--ink) / 0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
 .mask-fade {

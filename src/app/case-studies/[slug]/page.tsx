@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArchitectureDiagram } from "@/components/sections/architecture-diagram";
 import { Reveal } from "@/components/ui/reveal";
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: study.title,
-    description: `${study.problem} ${study.outcome}.`,
+    description: `${study.solution} ${study.outcome}.`,
   };
 }
 
@@ -33,30 +34,50 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
   return (
     <article>
       <section className="border-b border-line px-5 py-24 sm:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Reveal>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">{study.eyebrow}</p>
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">{study.category}</p>
             <h1 className="mt-6 max-w-5xl text-balance text-5xl font-semibold leading-tight sm:text-7xl">
               {study.title}
             </h1>
             <p className="mt-8 max-w-2xl text-xl leading-8 text-muted">{study.solution}</p>
+            <p className="mt-6 text-sm font-medium">{study.role}</p>
+          </Reveal>
+          <Reveal>
+            <div className="overflow-hidden rounded-2xl border border-line bg-canvas shadow-soft">
+              <Image
+                src={study.image}
+                alt={`${study.title} project preview`}
+                width={1536}
+                height={960}
+                priority
+                className="w-full object-cover"
+              />
+            </div>
           </Reveal>
         </div>
       </section>
       <section className="border-b border-line px-5 py-20 sm:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-3">
-          {[
-            ["Problem", study.problem],
-            ["Solution", study.solution],
-            ["Results", study.outcome],
-          ].map(([title, body], index) => (
-            <Reveal key={title} delay={index * 0.05}>
-              <div className="h-full rounded-2xl border border-line p-6">
-                <p className="text-sm text-muted">{title}</p>
-                <p className="mt-5 text-xl font-medium leading-8">{body}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <Reveal>
+            <div className="sticky top-28">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Business summary</p>
+              <ul className="mt-6 space-y-4 text-lg leading-8">
+                {study.summary.map((item) => (
+                  <li key={item} className="border-b border-line pb-4">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="rounded-2xl border border-line bg-canvas p-6 sm:p-8">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">What I built</p>
+              <p className="mt-6 text-lg leading-8 text-muted">{study.whatIBuilt}</p>
+              <p className="mt-8 text-2xl font-semibold">{study.outcome}</p>
+            </div>
+          </Reveal>
         </div>
       </section>
       <section className="border-b border-line px-5 py-20 sm:px-8">
@@ -83,19 +104,22 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Gallery</p>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {["Workflow map", "Review console", "System health"].map((label) => (
-                <div key={label} className="aspect-[4/3] rounded-2xl border border-line bg-canvas p-5">
-                  <div className="h-full rounded-xl border border-line p-4">
+            <div className="mt-8 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+              <div className="overflow-hidden rounded-2xl border border-line bg-canvas">
+                <Image src={study.image} alt={`${study.title} dashboard`} width={1536} height={960} className="w-full object-cover" />
+              </div>
+              <div className="grid gap-4">
+                {["Workflow map", "Automation health"].map((label) => (
+                  <div key={label} className="grid-panel rounded-2xl border border-line bg-canvas p-5">
                     <p className="text-sm font-medium">{label}</p>
                     <div className="mt-8 space-y-3">
                       <div className="h-3 w-3/4 rounded-full bg-ink/10 dark:bg-white/15" />
                       <div className="h-3 w-1/2 rounded-full bg-ink/10 dark:bg-white/15" />
-                      <div className="h-20 rounded-xl border border-line" />
+                      <div className="h-20 rounded-xl border border-line bg-canvas/70" />
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/ui/reveal";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a call or contact a senior full stack developer, AI engineer, and automation architect.",
+    "Book a call or contact Ajay Thakur for full stack development, AI automation, SaaS, CRM, and web projects.",
 };
 
 export default function ContactPage() {
@@ -16,16 +16,16 @@ export default function ContactPage() {
         <Reveal>
           <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Contact</p>
           <h1 className="mt-6 max-w-3xl text-balance text-5xl font-semibold leading-tight sm:text-7xl">
-            Let us map the manual work worth eliminating.
+            Let us turn the work slowing you down into software.
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-8 text-muted">
-            Bring the process, bottleneck, or system constraint. The first conversation is about clarity: what is manual, what is risky, and what should become software.
+            Share the process, product idea, CRM bottleneck, or automation gap. I will help define the fastest path to a reliable build.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a href="https://cal.com" className="inline-flex h-12 items-center rounded-full border border-ink bg-ink px-5 text-sm font-medium text-canvas">
               Book a Call
             </a>
-            <a href="mailto:hello@example.com" className="inline-flex h-12 items-center gap-2 rounded-full border border-line px-5 text-sm font-medium hover:border-ink">
+            <a href="mailto:hello@ajaythakur.dev" className="inline-flex h-12 items-center gap-2 rounded-full border border-line px-5 text-sm font-medium hover:border-ink">
               <Mail size={16} /> Email
             </a>
             <a href="https://linkedin.com" className="inline-flex size-12 items-center justify-center rounded-full border border-line hover:border-ink" aria-label="LinkedIn">

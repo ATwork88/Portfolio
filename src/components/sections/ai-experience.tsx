@@ -14,13 +14,13 @@ const prompts = [
 
 const answers: Record<string, string> = {
   "What projects have you built?":
-    "AI document operations, revenue workflow engines, analytics consoles, support assistants, integration layers, and internal automation platforms.",
+    "Loan-processing automation, AI cold-calling systems, restaurant analytics dashboards, CRM pipelines, SaaS platforms, and CMS-driven business websites.",
   "Do you work with AI?":
-    "Yes. The work focuses on useful AI systems: retrieval, tool use, structured outputs, human review, evaluation, and production guardrails.",
+    "Yes. I integrate OpenAI, voice agents, AI automation, structured workflows, and human review paths into real products.",
   "Experience with automation?":
-    "Automation is the through-line: removing recurring tasks, designing approval flows, connecting systems, and making operations measurable.",
+    "Automation is a core focus: Make.com, n8n, webhooks, CRM workflows, API integrations, routing rules, and operational alerts.",
   "Experience with SaaS?":
-    "Yes. Product architecture, dashboards, billing integrations, permissions, API design, data models, and scalable deployment patterns.",
+    "Yes. I build SaaS architecture, MVPs, dashboards, REST APIs, payments with Stripe or PayPal, admin panels, and responsive product interfaces.",
 };
 
 export function AIExperience() {
