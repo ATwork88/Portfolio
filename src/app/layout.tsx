@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { PageTransition } from "@/components/page-transition";
+import { content } from "@/lib/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,15 +21,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "Ajay Thakur | Full Stack Developer & AI/Automation Engineer",
-    template: "%s | Ajay Thakur",
+    default: content.seo.defaultTitle,
+    template: content.seo.titleTemplate,
   },
-  description:
-    "Ajay Thakur is a full stack developer and AI automation engineer building React, Python, SaaS, CRM, and workflow automation systems.",
+  description: content.seo.description,
   openGraph: {
-    title: "Ajay Thakur - I build systems that eliminate manual work.",
-    description:
-      "Full stack development, AI integration, CRM automation, SaaS architecture, and business workflow automation.",
+    title: content.seo.openGraphTitle,
+    description: content.seo.openGraphDescription,
     type: "website",
   },
   robots: {
@@ -47,10 +46,14 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+      >
         <SiteHeader />
         <PageTransition>{children}</PageTransition>
         <SiteFooter />

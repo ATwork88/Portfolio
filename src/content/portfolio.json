@@ -1,0 +1,952 @@
+{
+  "seo": {
+    "siteName": "Ajay Thakur",
+    "defaultTitle": "Ajay Thakur | Full Stack Developer & AI/Automation Engineer",
+    "titleTemplate": "%s | Ajay Thakur",
+    "description": "Ajay Thakur is a full stack developer and AI automation engineer building React, Python, SaaS, CRM, and workflow automation systems.",
+    "openGraphTitle": "Ajay Thakur - I build systems that eliminate manual work.",
+    "openGraphDescription": "Full stack development, AI integration, CRM automation, SaaS architecture, and business workflow automation."
+  },
+  "profile": {
+    "name": "Ajay Thakur",
+    "location": "Pennsylvania, USA",
+    "title": "Full Stack Developer & AI/Automation Engineer",
+    "shortTitle": "Full Stack AI Developer",
+    "rate": "$70/hr",
+    "upworkStatus": "16k+ / Top Rated",
+    "email": "contact.ajaythakur.dev@gmail.com",
+    "linkedinUrl": null,
+    "githubUrl": "https://github.com/ATwork88",
+    "upworkUrl": null,
+    "calendarUrl": "https://cal.com",
+    "copyright": "© 2026 Ajay Thakur"
+  },
+  "nav": [
+    { "href": "/case-studies", "label": "Case Studies" },
+    { "href": "/about", "label": "About" },
+    { "href": "/contact", "label": "Contact" }
+  ],
+  "hero": {
+    "eyebrow": "Ajay Thakur / Pennsylvania, USA",
+    "headline": "I build systems.",
+    "subheadline": "Full stack developer, AI Agent Developer, Automation Engineer, and SaaS architect.",
+    "description": "I engineer full-stack platforms, AI-driven systems, and automation infrastructure that turn complex operations into simple, scalable software.",
+    "primaryCta": "View Case Studies",
+    "secondaryCta": "Book a Call",
+    "image": "/Ajay.png",
+    "imageAlt": "Ajay Thakur",
+    "badgeTitle": "Top Rated Full Stack Developer",
+    "badgeText": "$70/hr / AI, Automation, SaaS",
+    "floatingBadge": "16k+ Upwork",
+    "scrollLabel": "Scroll"
+  },
+  "terminal": {
+    "eyebrow": "Systems Interface",
+    "headline": "Define the outcome. The system composes the execution.",
+    "description": "I design full-stack systems, AI agents, and automation layers that formalize business logic into reliable, composable infrastructure.",
+    "windowTitle": "system.runtime",
+
+    "actions": [
+      {
+        "label": "Build AI Agent",
+        "lines": [
+          "Parsing task structure and decision boundaries...",
+          "Composing tool access, context, and policy constraints...",
+          "Agent instantiated: deterministic execution with controlled autonomy."
+        ]
+      },
+      {
+        "label": "Automate Workflow",
+        "lines": [
+          "Identifying manual decision points and handoff points...",
+          "Modeling triggers, state transitions, and audit logs...",
+          "Workflow deployed: reduced human intervention, preserved traceability."
+        ]
+      },
+      {
+        "label": "Design Architecture",
+        "lines": [
+          "Separating compute, state, and integration layers...",
+          "Defining contracts, failure modes, and observability hooks...",
+          "Architecture validated: modular, testable, and production-safe."
+        ]
+      },
+      {
+        "label": "Integrate Systems",
+        "lines": [
+          "Establishing connectors across external systems...",
+          "Normalizing schemas and enforcing sync consistency...",
+          "Integration active: consistent state across distributed tools."
+        ]
+      }
+    ]
+  },
+  "caseStudiesSection": {
+    "eyebrow": "Case Studies",
+    "headline": "Systems built for scale across AI, automation, and modern SaaS infrastructure.",
+    "allWorkLabel": "View all projects",
+    "indexHeadline": "Selected systems spanning product, automation, and platform engineering.",
+    "indexDescription": "A collection of production-grade implementations across AI agents, CRM automation, integrations, and SaaS architectures designed for reliability and scale."
+  },
+  "categories": [
+    "All",
+    "AI Systems",
+    "Automation Systems",
+    "Full Stack Systems",
+    "Integration Architecture"
+  ],
+  "projects": [
+    {
+      "slug": "loan-processing-automation",
+      "title": "Loan Processing Automation - Make.com, LendingWise & ClickUp",
+      "category": "Automation Systems",
+      "url": null,
+      "images": [
+        "/gallery/loan processing automation/01.png",
+        "/gallery/loan processing automation/02.png",
+        "/gallery/loan processing automation/03.png",
+        "/gallery/loan processing automation/04.png",
+        "/gallery/loan processing automation/05.png",
+        "/gallery/loan processing automation/06.png",
+        "/gallery/loan processing automation/07.png",
+        "/gallery/loan processing automation/08.png",
+        "/gallery/loan processing automation/09.png",
+        "/gallery/loan processing automation/10.png"
+      ],
+      "role": "Automation Engineer / Make.com Developer",
+      "summary": [
+        "Operations automation for inbound and outbound communications with fast routing.",
+        "Eliminated repetitive manual steps across the mortgage workflow.",
+        "Improved response time and reduced missed handoffs.",
+        "Added error handling and edge-case coverage to reduce operational risk."
+      ],
+      "solution": "Built an end-to-end mortgage loan-processing automation using Make.com, LendingWise, ClickUp, GoHighLevel, Microsoft 365, Outlook, and OpenAI-assisted workflow steps.",
+      "whatIBuilt": "Built a mortgage loan-processing automation for a financial lender. Make.com webhooks, routers, and tools modules sync LendingWise loan events - new loans, loan processing, terms sent, and loan notes - into ClickUp tasks through the ClickUp API. I also configured GoHighLevel CRM dashboards, opportunity pipelines, and workflow automations for email, SMS, after-call triggers, and lead campaigns tracking 1,000+ opportunities worth $428K. JSON parsing and Microsoft 365 / Outlook modules complete the data flow.",
+      "outcome": "Faster loan routing with fewer missed handoffs",
+      "architecture": [
+        "LendingWise events",
+        "Make.com routers",
+        "ClickUp task sync",
+        "GHL CRM workflows",
+        "Outlook updates"
+      ],
+      "challenges": [
+        "Complex loan states",
+        "CRM and task-system alignment",
+        "Operational exceptions"
+      ],
+      "results": [
+        "1,000+ opportunities tracked",
+        "$428K pipeline visibility",
+        "Reduced repetitive processing work"
+      ],
+      "stack": [
+        "Make.com",
+        "LendingWise",
+        "ClickUp",
+        "GoHighLevel",
+        "ClickUp API",
+        "Webhooks",
+        "JSON",
+        "Microsoft 365",
+        "Outlook",
+        "OpenAI",
+        "CRM Automation",
+        "Loan Automation",
+        "Mortgage",
+        "Lead Management"
+      ]
+    },
+    {
+      "slug": "ai-cold-calling-system",
+      "title": "AI Cold Calling System",
+      "category": "AI Systems",
+      "url": null,
+      "images": [
+        "/gallery/ai cold calling sytem/01.png",
+        "/gallery/ai cold calling sytem/02.png",
+        "/gallery/ai cold calling sytem/03.png",
+        "/gallery/ai cold calling sytem/04.png",
+        "/gallery/ai cold calling sytem/05.png",
+        "/gallery/ai cold calling sytem/06.png"
+      ],
+      "role": "AI Automation Engineer",
+      "summary": [
+        "Qualified inbound and outbound leads without manual calling.",
+        "Connected voice AI with CRM stages and appointment booking.",
+        "Reduced sales-team admin while keeping follow-up visible."
+      ],
+      "solution": "Designed a VAPI, Make.com, and GoHighLevel system that qualifies leads, routes outcomes, and books appointments automatically.",
+      "whatIBuilt": "Created a voice-agent workflow with call outcomes, qualification rules, CRM updates, calendar routing, and fail-safe notifications for missed or uncertain interactions.",
+      "outcome": "Automated lead qualification and appointment booking",
+      "architecture": [
+        "Lead source",
+        "VAPI agent",
+        "Make.com workflow",
+        "GHL pipeline",
+        "Calendar booking"
+      ],
+      "challenges": [
+        "Call outcome accuracy",
+        "CRM state sync",
+        "Human handoff rules"
+      ],
+      "results": [
+        "Less manual outreach",
+        "Faster lead response",
+        "Cleaner pipeline updates"
+      ],
+      "stack": [
+        "VAPI",
+        "Make.com",
+        "GoHighLevel",
+        "OpenAI",
+        "Calendar APIs",
+        "SMS",
+        "Webhooks"
+      ]
+    },
+    {
+      "slug": "Zapier-Webinar-Funnel",
+      "title": "Zapier Webinar Funnel - SalesKick to Facebook Conversions API",
+      "category": "Automation Systems",
+      "url": null,
+      "images": [
+        "/gallery/Zapier Webinar Funnel/01.png",
+        "/gallery/Zapier Webinar Funnel/02.png",
+        "/gallery/Zapier Webinar Funnel/03.png",
+        "/gallery/Zapier Webinar Funnel/04.png",
+        "/gallery/Zapier Webinar Funnel/05.png"
+      ],
+      "role": "Zapier Automation & Tracking Specialist",
+      "summary": [
+        "Operations automation • Automate inbound/outbound communications with fast routing",
+        "Eliminated repetitive manual steps across the workflow",
+        "Faster response time and fewer missed handoffs",
+        "Error handling and edge-case coverage to reduce operational risk."
+      ],
+      "solution": "Automated the webinar registration and purchase funnel for an AI education institute using Zapier and server-side tracking integrations.",
+      "whatIBuilt": "I built multi-step Zapier Zaps that capture new SalesKick form submissions and webinar registrations via Webhooks by Zapier, route leads through conditional Paths for segmentation, and send server-side conversion events to the Facebook (Meta) Conversions API. This includes passing hashed user data (email, phone, name) and event IDs to ensure accurate attribution, improved tracking reliability, and reduced cost-per-lead. The system keeps SalesKick, landing pages, and Meta Ads fully synchronized in real time.",
+      "outcome": "Improved conversion tracking accuracy, reduced cost-per-lead, and better Meta Ads optimization through reliable server-side attribution.",
+      "architecture": [
+        "Webhooks ingestion layer",
+        "Conditional routing logic",
+        "Data enrichment & hashing layer",
+        "Meta Conversions API integration",
+        "Event tracking pipeline"
+      ],
+      "challenges": [
+        "Ensuring accurate event deduplication between browser and server events",
+        "Maintaining consistent data mapping across SalesKick and Meta CAPI",
+        "Handling edge cases in webhook delivery and retries"
+      ],
+      "results": [
+        "More accurate attribution reporting",
+        "Lower cost-per-lead",
+        "Improved ad campaign optimization",
+        "Reduced manual tracking errors"
+      ],
+      "stack": [
+        "Zapier",
+        "Webhooks by Zapier",
+        "SalesKick",
+        "Facebook Conversions API",
+        "Meta Ads",
+        "Server-Side Tracking",
+        "API Integrations"
+      ]
+    },
+    {
+      "slug": "ai-sales-call-review",
+      "title": "AI Sales Call Review Automation",
+      "category": "AI Systems",
+      "url": null,
+      "images": [
+        "/gallery/AI Sales Call Review/01.png",
+        "/gallery/AI Sales Call Review/02.png",
+        "/gallery/AI Sales Call Review/03.png",
+        "/gallery/AI Sales Call Review/04.png",
+        "/gallery/AI Sales Call Review/05.png",
+        "/gallery/AI Sales Call Review/06.png",
+        "/gallery/AI Sales Call Review/08.png",
+        "/gallery/AI Sales Call Review/09.png",
+        "/gallery/AI Sales Call Review/10.png",
+        "/gallery/AI Sales Call Review/11.png",
+        "/gallery/AI Sales Call Review/12.png",
+        "/gallery/AI Sales Call Review/13.png",
+        "/gallery/AI Sales Call Review/14.png",
+        "/gallery/AI Sales Call Review/15.png",
+        "/gallery/AI Sales Call Review/16.png"
+      ],
+      "role": "AI Automation Engineer / Make.com & Zapier Developer",
+      "summary": [
+        "Automated sales call transcription review and scoring.",
+        "Reduced manual QA work for sales managers.",
+        "Improved feedback speed and coaching consistency."
+      ],
+      "solution": "Built an AI-powered sales call auditing system that automatically processes call transcripts and generates structured performance reviews.",
+      "whatIBuilt": "When a Zoom call ends, Fathom generates the transcript and Zapier captures it, then sends the payload (transcript, rep name, call date) to a Make.com webhook. Make parses the JSON and runs a multi-step OpenAI (GPT / o-series) prompt chain that evaluates the call against a custom audit rubric, scoring areas like discovery, objection handling, pitch quality, and pricing discussion. The final structured review is posted to a Slack channel (#sales-call-reviews) and tagged to the relevant sales rep, with retry logic and failure alerts routed to #automation-errors.",
+      "outcome": "Automated sales call evaluation and improved coaching feedback speed and consistency.",
+      "architecture": [
+        "Call transcription ingestion",
+        "Webhook routing (Zapier → Make.com)",
+        "JSON parsing layer",
+        "AI evaluation and scoring engine (OpenAI)",
+        "Rubric-based analysis pipeline",
+        "Slack reporting and notification layer"
+      ],
+      "challenges": [
+        "Ensuring consistent scoring across different call types",
+        "Handling incomplete or noisy transcript data",
+        "Maintaining reliable webhook delivery between Zapier and Make.com",
+        "Reducing false negatives in AI evaluation outputs"
+      ],
+      "results": [
+        "Faster sales coaching feedback loops",
+        "Reduced manual call review workload",
+        "More consistent and structured performance evaluations",
+        "Improved visibility into sales team performance"
+      ],
+      "stack": [
+        "Zapier",
+        "Make.com",
+        "OpenAI / GPT",
+        "Slack",
+        "Fathom",
+        "Zoom",
+        "Webhooks",
+        "JSON Parsing",
+        "AI Prompt Engineering",
+        "Workflow Automation"
+      ]
+    },
+    {
+      "slug": "airrived-official-website",
+      "title": "AIRRIVED Official Website",
+      "category": "Full Stack Systems",
+      "url": "https://airrived.ai/",
+      "images": [
+        "/gallery/airrived/03.jpg",
+        "/gallery/airrived/01.jpg",
+        "/gallery/airrived/02.jpg",
+        "/gallery/airrived/04.jpg",
+        "/gallery/airrived/05.png",
+        "/gallery/airrived/06.png",
+        "/gallery/airrived/07.png",
+        "/gallery/airrived/08.png",
+        "/gallery/airrived/09.png",
+        "/gallery/airrived/10.png",
+        "/gallery/airrived/11.png"
+      ],
+      "role": "Frontend / 3D Web Developer",
+      "summary": [
+        "Built a high-performance official website for AIRRIVED with immersive 3D interactions.",
+        "Integrated smooth animations and transitions for premium user experience.",
+        "Fully mobile optimized with fast loading performance across devices."
+      ],
+      "solution": "Developed a modern, interactive official website for AIRRIVED focused on high-end visuals, smooth motion design, and performance optimization.",
+      "whatIBuilt": "Built the official AIRRIVED website using Next.js with Three.js for 3D interactions and GSAP for advanced animations and transitions. Created custom 3D models in Blender and integrated them into the web experience for real-time rendering. Ensured full mobile responsiveness, performance optimization, and smooth transitions across desktop and mobile devices with fast load times and optimized assets.",
+      "outcome": "Delivered a visually immersive, fast, and highly optimized 3D website experience for both desktop and mobile users.",
+      "architecture": [
+        "Next.js frontend architecture",
+        "Three.js 3D rendering layer",
+        "GSAP animation system",
+        "Blender 3D asset pipeline",
+        "Responsive mobile-first layout",
+        "Performance optimization pipeline"
+      ],
+      "challenges": [
+        "Optimizing 3D models for web performance",
+        "Maintaining smooth animations on low-end mobile devices",
+        "Balancing visual quality with fast load times",
+        "Integrating GSAP animations with Three.js scenes"
+      ],
+      "results": [
+        "Fast loading performance on desktop and mobile",
+        "Smooth and immersive 3D user experience",
+        "Highly responsive mobile optimization",
+        "Premium visual branding for AIRRIVED"
+      ],
+      "stack": [
+        "Next.js",
+        "Three.js",
+        "GSAP",
+        "Blender",
+        "WebGL",
+        "Responsive Design",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "slug": "nango-official-website",
+      "title": "Nango Website",
+      "category": "Full Stack Systems",
+      "url": "https://nango.dev/",
+      "images": [
+        "/gallery/nango/1.png",
+        "/gallery/nango/2.png",
+        "/gallery/nango/3.png",
+        "/gallery/nango/4.png",
+        "/gallery/nango/5.png",
+        "/gallery/nango/6.png",
+        "/gallery/nango/7.png",
+        "/gallery/nango/8.png",
+        "/gallery/nango/9.png",
+        "/gallery/nango/10.png",
+        "/gallery/nango/11.png",
+        "/gallery/nango/12.png"
+      ],
+      "role": "Frontend Developer",
+      "summary": [
+        "Built a fast, pixel-perfect official website for Nango.",
+        "Focused on performance, clean UI, and modern frontend architecture.",
+        "Delivered a fully responsive and optimized user experience."
+      ],
+      "solution": "Developed a modern, high-performance official website for Nango with a focus on speed, clean design implementation, and pixel-perfect UI accuracy.",
+      "whatIBuilt": "Built the official Nango website using Astro and Tailwind CSS, focusing on clean frontend architecture, pixel-perfect UI implementation, and high performance. Optimized the site for fast loading speed and responsive behavior across all devices while ensuring consistent design fidelity and smooth user experience.",
+      "outcome": "Delivered a fast, responsive, and visually accurate website with strong performance optimization and clean UI execution.",
+      "architecture": [
+        "Astro frontend architecture",
+        "Tailwind CSS design system",
+        "Static site optimization",
+        "Component-based UI structure",
+        "Responsive layout system",
+        "Performance-first rendering approach"
+      ],
+      "challenges": [
+        "Maintaining pixel-perfect accuracy across breakpoints",
+        "Optimizing load speed while preserving design quality",
+        "Ensuring responsive consistency across devices",
+        "Structuring clean reusable frontend components"
+      ],
+      "results": [
+        "Fast loading performance",
+        "Pixel-perfect UI implementation",
+        "Fully responsive design",
+        "Clean and maintainable frontend codebase"
+      ],
+      "stack": [
+        "Astro",
+        "Tailwind CSS",
+        "Frontend Development",
+        "Responsive Design",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "slug": "colectif-system-architecture",
+      "title": "Colectif - Multi-System Business Architecture",
+      "category": "Integration Architecture",
+      "url": null,
+      "images": [
+        "/gallery/colectif/01.png",
+        "/gallery/colectif/02.png",
+        "/gallery/colectif/03.png",
+        "/gallery/colectif/04.png",
+        "/gallery/colectif/05.png",
+        "/gallery/colectif/06.png",
+        "/gallery/colectif/07.png",
+        "/gallery/colectif/08.png",
+        "/gallery/colectif/09.png",
+        "/gallery/colectif/10.png",
+        "/gallery/colectif/12.png",
+        "/gallery/colectif/13.png",
+        "/gallery/colectif/14.png"
+      ],
+      "role": "Systems Architect / Automation Engineer",
+      "summary": [
+        "Designed a multi-system architecture across 8 integrated business tools.",
+        "Separated sales, revenue, and delivery into independent operational engines.",
+        "Eliminated system overlap and improved operational clarity across teams.",
+        "Built structured data flow between CRM, billing, and fulfillment systems."
+      ],
+      "solution": "Designed and implemented a modular business architecture connecting Apollo, HubSpot, Monday, Shopify, Zoho Books, Airtable, Zest, and Softr into three operational engines.",
+      "whatIBuilt": "Architected a three-engine system: Sales Engine (Apollo → HubSpot → Monday), Revenue Engine (Shopify → Zoho Books → Airtable), and Delivery Engine (Airtable → Zest → Softr). Defined strict system boundaries, data ownership rules, and event-based synchronization flows to eliminate overlap between tools and ensure deterministic business logic across the stack.",
+      "outcome": "Unified fragmented tools into a structured, scalable operating system for sales, revenue, and fulfillment.",
+      "architecture": [
+        "Sales Engine: Apollo → HubSpot → Monday",
+        "Revenue Engine: Shopify → Zoho Books → Airtable",
+        "Delivery Engine: Airtable → Zest → Softr",
+        "Event-based system synchronization layer",
+        "Metafield-driven data modeling in Shopify",
+        "Make-based automation layer"
+      ],
+      "challenges": [
+        "Preventing tool overlap and conflicting system responsibilities",
+        "Maintaining data consistency across 8 platforms",
+        "Designing deterministic automation flows",
+        "Aligning sales, finance, and delivery systems into one model"
+      ],
+      "results": [
+        "Clear separation of operational responsibilities",
+        "Reduced manual coordination across teams",
+        "Improved visibility across sales-to-delivery lifecycle",
+        "Scalable foundation for future product expansion"
+      ],
+      "stack": [
+        "Apollo",
+        "HubSpot",
+        "Monday.com",
+        "Shopify",
+        "Zoho Books",
+        "Airtable",
+        "Zest",
+        "Softr",
+        "Make.com",
+        "CRM Systems",
+        "Business Process Automation"
+      ]
+    },
+    {
+      "slug": "airbnb-invoicing-payment-automation",
+      "title": "Airbnb Invoicing & Payment Automation - Zapier, Guesty & Stripe",
+      "category": "Automation Systems",
+      "url": null,
+      "images": [
+        "/gallery/airbnb-invoicing-payment-automation/01.png",
+        "/gallery/airbnb-invoicing-payment-automation/02.png",
+        "/gallery/airbnb-invoicing-payment-automation/03.png",
+        "/gallery/airbnb-invoicing-payment-automation/04.png",
+        "/gallery/airbnb-invoicing-payment-automation/05.png"
+      ],
+      "role": "Zapier Automation Specialist",
+      "summary": [
+        "Automated invoicing and payment tracking across hospitality operations.",
+        "Eliminated manual reconciliation between booking, billing, and accounting systems.",
+        "Improved payment visibility and reduced missed transactions.",
+        "Added structured error handling across multi-system workflows."
+      ],
+      "solution": "Built an automation system connecting Guesty, Stripe, Google Sheets, and Slack using multi-step Zapier workflows for real-time invoicing and payment synchronization.",
+      "whatIBuilt": "Designed multi-step Zapier workflows that process Guesty booking events into structured Google Sheets invoices, normalize line items and totals, and sync Stripe payment events into Slack for real-time financial visibility. Implemented formatting layers using Formatter by Zapier to ensure consistent currency, date, and numerical data across systems.",
+      "outcome": "Reduced manual accounting work and improved real-time visibility of bookings and payments.",
+      "architecture": [
+        "Guesty booking event ingestion",
+        "Zapier multi-step workflow engine",
+        "Google Sheets invoice generation layer",
+        "Stripe payment event listener",
+        "Slack notification pipeline",
+        "Formatter normalization layer"
+      ],
+      "challenges": [
+        "Cross-platform data consistency (Guesty ↔ Stripe ↔ Sheets)",
+        "Handling multi-account Stripe event streams",
+        "Ensuring idempotent invoice creation",
+        "Edge-case handling in booking modifications and refunds"
+      ],
+      "results": [
+        "Reduced manual invoice processing",
+        "Improved payment tracking visibility",
+        "Fewer missed or duplicated transactions",
+        "Faster financial reconciliation workflow"
+      ],
+      "stack": [
+        "Zapier",
+        "Guesty",
+        "Stripe",
+        "Google Sheets",
+        "Slack",
+        "Formatter by Zapier",
+        "Multi-Step Zaps",
+        "Payment Automation",
+        "Invoicing Systems",
+        "Hospitality Operations"
+      ]
+    },
+    {
+      "slug": "airtable-mortgage-crm-lead-dashboard",
+      "title": "Airtable CRM & Lead Dashboard - Mortgage Funnel + Make.com",
+      "category": "Automation Systems",
+      "url": null,
+      "images": [
+        "/gallery/able-mortgage-crm-lead-dashboard/01.png",
+        "/gallery/able-mortgage-crm-lead-dashboard/02.png",
+        "/gallery/able-mortgage-crm-lead-dashboard/03.png",
+        "/gallery/able-mortgage-crm-lead-dashboard/04.png",
+        "/gallery/able-mortgage-crm-lead-dashboard/05.png"
+      ],
+      "role": "Airtable CRM Developer / Make.com Automation Engineer",
+      "summary": [
+        "Built a real-time CRM system for mortgage lead tracking and qualification.",
+        "Automated lead ingestion from Meta Ads into structured CRM pipelines.",
+        "Reduced manual lead entry and improved response time.",
+        "Created live dashboards for pipeline visibility and reporting."
+      ],
+      "solution": "Designed an Airtable-based CRM and dashboard system integrated with Make.com to automate mortgage lead capture, pipeline tracking, and reporting.",
+      "whatIBuilt": "Built an Airtable CRM with structured lead lifecycle stages (New, Contacted, Qualified, Converted, Not Qualified). Created a custom Airtable Interface dashboard with real-time filters, KPI summaries, and visual analytics. Integrated Make.com workflows to ingest Meta/Facebook Lead Ads via webhooks and automatically populate CRM records without manual input.",
+      "outcome": "Centralized mortgage lead management with fully automated lead ingestion and real-time pipeline visibility.",
+      "architecture": [
+        "Meta/Facebook Lead Ads ingestion layer",
+        "Make.com automation pipeline",
+        "Airtable CRM database layer",
+        "Airtable Interface dashboard layer",
+        "Pipeline stage automation logic",
+        "Webhook-based data sync system"
+      ],
+      "challenges": [
+        "Ensuring real-time sync between Meta Ads and Airtable",
+        "Structuring flexible but consistent CRM pipeline stages",
+        "Handling incomplete or inconsistent lead data",
+        "Maintaining dashboard performance with growing dataset"
+      ],
+      "results": [
+        "Eliminated manual lead entry",
+        "Improved lead response time",
+        "Increased visibility into mortgage pipeline",
+        "Reduced operational overhead for CRM management"
+      ],
+      "stack": [
+        "Airtable",
+        "Make.com",
+        "Meta Lead Ads",
+        "Facebook Ads API",
+        "Webhooks",
+        "CRM Systems",
+        "Data Pipelines",
+        "Airtable Interface Designer",
+        "Automation Systems"
+      ]
+    },
+    {
+      "slug": "n8n-ai-voice-agent-automation-vapi-airtable",
+      "title": "n8n AI Voice Agent Automation - Vapi + Airtable + AI Agent",
+      "category": "AI Systems",
+      "url": null,
+      "images": [
+        "/gallery/n8n-ai-voice-agent-automation-vapi-airtable/01.png",
+        "/gallery/n8n-ai-voice-agent-automation-vapi-airtable/02.png",
+        "/gallery/n8n-ai-voice-agent-automation-vapi-airtable/03.png",
+        "/gallery/n8n-ai-voice-agent-automation-vapi-airtable/04.png"
+      ],
+      "role": "n8n & Vapi Automation Engineer / AI Agent Developer",
+      "summary": [
+        "Automated cold-call analysis and CRM enrichment using AI voice agents.",
+        "Converted raw call data into structured CRM-ready insights.",
+        "Reduced manual lead logging and follow-up work.",
+        "Improved lead qualification speed and consistency."
+      ],
+      "solution": "Built an AI voice agent automation system using Vapi for calling and n8n for orchestration, transforming raw call outcomes into structured CRM data using AI agents.",
+      "whatIBuilt": "Designed an n8n workflow that processes Vapi voice agent calls and uses an AI Agent node (OpenAI + MCP tools) to extract structured outputs such as intent, sentiment, qualification status, objections, and follow-up actions. Implemented routing logic via switch nodes to categorize outcomes and update Airtable CRM records in real time with enriched lead data and scheduled follow-ups.",
+      "outcome": "Turned unstructured voice conversations into structured, actionable CRM data with zero manual entry.",
+      "architecture": [
+        "Vapi voice agent call layer",
+        "n8n workflow orchestration engine",
+        "AI Agent (OpenAI + MCP tool layer)",
+        "Call transcription + analysis pipeline",
+        "Routing logic (Switch nodes)",
+        "Airtable CRM sync layer"
+      ],
+      "challenges": [
+        "Accurate extraction of structured data from noisy call transcripts",
+        "Routing ambiguous call outcomes reliably",
+        "Ensuring CRM consistency across automated updates",
+        "Handling edge cases like incomplete or failed calls"
+      ],
+      "results": [
+        "Fully automated call-to-CRM pipeline",
+        "Faster lead qualification cycles",
+        "Reduced manual data entry",
+        "Improved follow-up accuracy and timing"
+      ],
+      "stack": [
+        "n8n",
+        "Vapi",
+        "Airtable",
+        "OpenAI",
+        "AI Agent",
+        "MCP (Model Context Protocol)",
+        "Webhooks",
+        "Routing Logic",
+        "CRM Automation",
+        "Voice AI Systems"
+      ]
+    },
+    {
+      "slug": "cold-calling-agency-automation-make-ghl-google-sheets",
+      "title": "Cold-Calling Agency Automation - Make.com, GHL & Google Sheets",
+      "category": "Automation Systems",
+      "url": null,
+      "images": [
+        "/gallery/cold-calling-agency-automation-make-ghl-google-sheets/01.png",
+        "/gallery/cold-calling-agency-automation-make-ghl-google-sheets/02.png",
+        "/gallery/cold-calling-agency-automation-make-ghl-google-sheets/03.png",
+        "/gallery/cold-calling-agency-automation-make-ghl-google-sheets/04.png",
+        "/gallery/cold-calling-agency-automation-make-ghl-google-sheets/05.png"
+      ],
+      "role": "Make.com Automation Engineer",
+      "summary": [
+        "Built multi-client cold-calling automation infrastructure across 10+ sub-accounts.",
+        "Automated outbound workflows, CRM updates, and reporting pipelines.",
+        "Improved booking speed and reduced manual coordination between tools.",
+        "Implemented error handling and multi-client workflow isolation."
+      ],
+      "solution": "Designed a scalable automation system for a cold-calling agency using Make.com, GoHighLevel, and Google Sheets to manage outbound calling, CRM updates, and appointment booking across multiple client accounts.",
+      "whatIBuilt": "Built a modular Make.com automation architecture where prospect data is pulled from Google Sheets, processed through variable mapping and HTTP API calls to dialer systems, and written back with call outcomes. Created separate scenario layers per client sub-account (10+ environments) including CRM updates in GoHighLevel, calendar booking automation, Facebook lead ingestion, Webflow sync, and timezone-aware scheduling using PST formatting logic.",
+      "outcome": "Enabled scalable cold-calling operations across multiple client organizations with automated CRM synchronization and reporting.",
+      "architecture": [
+        "Google Sheets lead ingestion layer",
+        "Make.com multi-scenario orchestration",
+        "HTTP/API dialer integration layer",
+        "GoHighLevel CRM sync layer",
+        "Calendar booking automation",
+        "Facebook Lead Ads ingestion",
+        "Webflow integration layer",
+        "Timezone normalization (PST)"
+      ],
+      "challenges": [
+        "Managing 10+ isolated client automation environments",
+        "Ensuring data consistency across CRM and sheets",
+        "Handling API failures and retry logic",
+        "Timezone and scheduling alignment issues",
+        "Preventing cross-client data leakage"
+      ],
+      "results": [
+        "Scaled automation across multiple client accounts",
+        "Reduced manual outbound coordination",
+        "Improved booking conversion speed",
+        "Increased operational reliability across workflows"
+      ],
+      "stack": [
+        "Make.com",
+        "GoHighLevel",
+        "Google Sheets",
+        "HTTP API",
+        "Webhooks",
+        "CRM Automation",
+        "Facebook Lead Ads",
+        "Webflow",
+        "Calendar APIs",
+        "Cold Calling Systems"
+      ]
+    },
+    {
+      "slug": "real-estate-ai-voice-agent-vapi-make-ghl",
+      "title": "Real-Estate AI Voice Agent - Vapi, Make.com & GoHighLevel",
+      "category": "AI Systems",
+      "url": null,
+      "images": [
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/01.png",
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/02.png",
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/03.png",
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/04.png",
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/05.png",
+        "/gallery/real-estate-ai-voice-agent-vapi-make-ghl/05.png"
+      ],
+      "role": "AI Voice Automation Engineer / Vapi & Make.com Developer",
+      "summary": [
+        "Built an AI voice agent for inbound and outbound real-estate calls.",
+        "Automated lead qualification, scheduling, and CRM updates.",
+        "Improved response time and reduced manual call handling.",
+        "Enabled real-time appointment booking with calendar sync."
+      ],
+      "solution": "Designed an AI voice system using Vapi and OpenAI GPT-4o integrated with Make.com and GoHighLevel to handle real-estate lead calls, bookings, and CRM updates.",
+      "whatIBuilt": "Built a Vapi-powered AI voice agent ('Riley') that manages real-estate conversations end-to-end, including property inquiries, lead qualification, appointment scheduling, and call transfers. Implemented custom Vapi tools that trigger Make.com scenarios for live GoHighLevel calendar availability checks, CRM appointment creation, Google Sheets logging, and automated call summaries.",
+      "outcome": "Automated real-estate lead handling from first contact to booked consultation with minimal human intervention.",
+      "architecture": [
+        "Vapi voice agent layer (Riley)",
+        "OpenAI GPT-4o reasoning engine",
+        "Custom tool-calling layer (Vapi tools)",
+        "Make.com workflow orchestration",
+        "GoHighLevel calendar + CRM integration",
+        "Google Sheets logging system",
+        "Call reporting pipeline"
+      ],
+      "challenges": [
+        "Maintaining natural conversational flow in voice interactions",
+        "Real-time calendar availability synchronization",
+        "Reliable tool execution during live calls",
+        "Handling interruptions and human call transfers"
+      ],
+      "results": [
+        "Fully automated real-estate call handling",
+        "Faster lead qualification and booking",
+        "Reduced missed opportunities from inbound calls",
+        "Improved CRM data consistency"
+      ],
+      "stack": [
+        "Vapi",
+        "Make.com",
+        "GoHighLevel",
+        "OpenAI GPT-4o",
+        "AI Voice Agents",
+        "Webhooks",
+        "Google Sheets",
+        "Calendar APIs",
+        "CRM Automation",
+        "Real Estate Systems"
+      ]
+    }
+  ],
+  "timeline": {
+    "eyebrow": "Operating Model",
+    "headline": "From ambiguity to an automated system.",
+    "stages": [
+      [
+        "Discover",
+        "Find the manual work, business risk, and system constraints that matter."
+      ],
+      [
+        "Architect",
+        "Define the durable shape: data flow, ownership, interfaces, and failure modes."
+      ],
+      [
+        "Build",
+        "Ship focused product surfaces, APIs, and services that are easy to operate."
+      ],
+      [
+        "Automate",
+        "Replace repeated decisions and handoffs with reliable workflows and AI support."
+      ],
+      [
+        "Scale",
+        "Harden performance, observability, permissions, and product expansion paths."
+      ]
+    ]
+  },
+  "metricsSection": {
+    "eyebrow": "Signal",
+    "headline": "Systems shipped, workflows automated, and production complexity reduced."
+  },
+  "metrics": [
+    { "value": 7, "suffix": "+", "label": "Years of Experience" },
+    { "value": 20, "suffix": "+", "label": "Production Systems Built" },
+    { "value": 40, "suffix": "+", "label": "Automations Implemented" },
+    { "value": 10, "suffix": "+", "label": "AI / Agent Integrations" }
+  ],
+  "testimonialsSection": {
+    "eyebrow": "Client Reviews",
+    "headline": "What clients say after the manual work disappears."
+  },
+  "testimonials": [
+    {
+      "quote": "I would confidently recommend him for any complex systems architecture or automation-heavy project. The combination of technical skill and system-level thinking is a strong asset for any growing business.",
+      "name": "Holly Addi",
+      "title": "Co-Founder @ Colectif"
+    },
+    {
+      "quote": "He is absolutely incredible! Super responsive, great customer communication, and that's just the tip of the iceberg. He is super knowledgeable, was able to fix all of our sites issues, improve performance score, and a full web redesign. Hiring him is one of the best things we've done for our business. Highly recommend.",
+      "name": "Dr. Kallie Rojo",
+      "title": "COO @ NCPI"
+    },
+    {
+      "quote": "He helped us so much! I would definitely recommend his expertise!",
+      "name": "Heidi Jube",
+      "title": "Co-Founder @ Colectif"
+    },
+
+    {
+      "quote": "Honestly, just a solid experience. He took ownership of the build and delivered a production-ready site that matched our expectations without friction.",
+      "name": "Bastien Beurier",
+      "title": "Co-Founder & CTO @ Nango.dev"
+    },
+
+    {
+      "quote": "The level of polish and technical discipline felt consistent with top-tier product teams — nothing felt improvised.",
+      "name": "Anurag Gurtu",
+      "title": "Co-Founder & CEO @ AIRRIVED"
+    }
+  ],
+  "aiExperience": {
+    "eyebrow": "Interface",
+    "headline": "A structured interface to explore systems, engineering work, and AI integrations.",
+    "description": "This layer provides a searchable view into production systems across AI, automation, SaaS, and full-stack architecture.",
+    "intro": "Query systems, architecture, or applied AI work.",
+    "answers": {
+      "What have you built?": "Production systems spanning automation pipelines, AI agent workflows, CRM integrations, SaaS applications, and CMS-driven web platforms.",
+      "Do you work with AI systems?": "Yes. I design and integrate LLM-based agents, structured tool workflows, retrieval layers, and human-in-the-loop decision systems.",
+      "What is your automation experience?": "Event-driven workflows, API orchestration, webhook systems, CRM automation, and operational pipelines across multiple business tools.",
+      "What is your SaaS experience?": "End-to-end SaaS systems including architecture, authentication, billing flows, admin panels, APIs, and frontend product interfaces."
+    }
+  },
+  "about": {
+    "metadataDescription": "About Ajay Thakur, a full stack developer and AI automation engineer based in Pennsylvania, USA.",
+    "eyebrow": "About Ajay Thakur",
+    "headline": "Full stack development, AI implementation, and automation-first product architecture.",
+    "profileLabel": "Profile",
+    "profileText": "Ajay Thakur - Pennsylvania, USA. Full Stack Developer & AI/Automation Engineer.",
+    "stats": [
+      { "label": "Upwork", "value": "16k+ / Top Rated" },
+      { "label": "Rate", "value": "$70/hr" }
+    ],
+    "story": [
+      "I am a Full Stack AI Developer with professional experience building modern web applications, AI-powered systems, workflow automations, and scalable SaaS platforms for startups, businesses, and growing organizations.",
+      "My work spans the full product lifecycle: designing clean interfaces, building high-performance backend APIs, integrating third-party services, and turning operational workflows into reliable software. On the backend, I use Python, FastAPI, API-first design, and clean architecture. On the frontend, I build responsive product experiences with React, Next.js, Tailwind CSS, and modern JavaScript frameworks.",
+      "I also integrate AI into real products through OpenAI APIs, automation workflows, and orchestration tools like n8n and Make.com. Beyond custom applications, I work with WordPress, Laravel, Webflow, and PHP-based systems for CMS-driven products, custom admin panels, and faster business delivery."
+    ],
+    "principles": [
+      "Build products end to end, from clean user interfaces to secure backend APIs.",
+      "Use AI and automation to remove repetitive work, not to add complexity.",
+      "Design systems around performance, security, maintainability, and responsive UX.",
+      "Act as a long-term technical partner who owns outcomes, not just tasks."
+    ],
+    "historyTitle": "Employment History",
+    "history": [
+      ["AI Engineer", "Chariot Solutions", "January 2025 - November 2025"],
+      ["Full-stack Developer", "Atlasiko", "March 2020 - December 2024"],
+      [
+        "Web and App Developer",
+        "Web Wizard Development",
+        "February 2019 - November 2019"
+      ]
+    ],
+    "educationLabel": "Education",
+    "educationSchool": "University of Pennsylvania",
+    "educationDegree": "Bachelor of Computer Science, 2017-2021",
+    "skillsTitle": "Core Skills & Technologies",
+    "skills": [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "REST APIs",
+      "C#",
+      ".NET",
+      "OpenAI API",
+      "AI Automation",
+      "n8n",
+      "Make.com",
+      "SaaS Architecture",
+      "MVP Development",
+      "Stripe",
+      "PayPal",
+      "Google Maps API",
+      "PHP",
+      "WordPress",
+      "Laravel",
+      "Webflow",
+      "Tailwind CSS",
+      "Bootstrap"
+    ]
+  },
+  "contact": {
+    "metadataDescription": "Book a call or contact Ajay Thakur for full stack development, AI automation, SaaS, CRM, and web projects.",
+    "eyebrow": "Contact",
+    "headline": "Let me turn the work slowing you down into software.",
+    "description": "Share the process, product idea, CRM bottleneck, or automation gap. I will help define the fastest path to a reliable build.",
+    "bookLabel": "Book a Call",
+    "emailLabel": "Email",
+    "form": {
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "focusLabel": "Project focus",
+      "messageLabel": "What needs to change?",
+      "options": [
+        "AI system",
+        "Workflow automation",
+        "SaaS architecture",
+        "Systems integration"
+      ],
+      "submitLabel": "Send Inquiry",
+      "successMessage": "Message staged. This demo form is ready to connect to your preferred email or CRM endpoint."
+    }
+  },
+  "footer": {
+    "workLabel": "Case Studies",
+    "aboutLabel": "About",
+    "contactLabel": "Contact",
+    "emailLabel": "Email",
+    "linkedinLabel": null,
+    "upworkLabel": "Upwork"
+  }
+}

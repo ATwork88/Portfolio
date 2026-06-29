@@ -2,23 +2,20 @@
 
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/reveal";
+import { content } from "@/lib/data";
 
-const stages = [
-  ["Discover", "Find the manual work, business risk, and system constraints that matter."],
-  ["Architect", "Define the durable shape: data flow, ownership, interfaces, and failure modes."],
-  ["Build", "Ship focused product surfaces, APIs, and services that are easy to operate."],
-  ["Automate", "Replace repeated decisions and handoffs with reliable workflows and AI support."],
-  ["Scale", "Harden performance, observability, permissions, and product expansion paths."],
-];
+const stages = content.timeline.stages;
 
 export function Timeline() {
   return (
     <section className="border-b border-line px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Operating Model</p>
+          <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+            {content.timeline.eyebrow}
+          </p>
           <h2 className="mt-5 text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-            From ambiguity to an automated system.
+            {content.timeline.headline}
           </h2>
         </Reveal>
         <div className="relative mt-14">
@@ -34,8 +31,14 @@ export function Timeline() {
                 index % 2 === 0 ? "md:text-right" : "md:text-left"
               }`}
             >
-              <div className={`absolute left-[9px] top-1 size-4 rounded-full border border-ink bg-canvas md:left-[calc(50%-0.5rem)]`} />
-              <div className={index % 2 === 0 ? "md:pr-12" : "md:col-start-2 md:pl-12"}>
+              <div
+                className={`absolute left-[9px] top-1 size-4 rounded-full border border-ink bg-canvas md:left-[calc(50%-0.5rem)]`}
+              />
+              <div
+                className={
+                  index % 2 === 0 ? "md:pr-12" : "md:col-start-2 md:pl-12"
+                }
+              >
                 <p className="text-2xl font-semibold">{title}</p>
                 <p className="mt-3 text-base leading-7 text-muted">{body}</p>
               </div>

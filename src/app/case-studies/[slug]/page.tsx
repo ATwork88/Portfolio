@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArchitectureDiagram } from "@/components/sections/architecture-diagram";
 import { Reveal } from "@/components/ui/reveal";
+import { GalleryModal } from "@/components/ui/gallery-modal";
 import { caseStudies } from "@/lib/data";
 
 type PageProps = {
@@ -13,7 +14,9 @@ export function generateStaticParams() {
   return caseStudies.map((study) => ({ slug: study.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const study = caseStudies.find((item) => item.slug === slug);
 
@@ -36,17 +39,37 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
       <section className="border-b border-line px-5 py-24 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Reveal>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">{study.category}</p>
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+              {study.category}
+            </p>
+
             <h1 className="mt-6 max-w-5xl text-balance text-5xl font-semibold leading-tight sm:text-7xl">
               {study.title}
             </h1>
-            <p className="mt-8 max-w-2xl text-xl leading-8 text-muted">{study.solution}</p>
+
+            <p className="mt-8 max-w-2xl text-xl leading-8 text-muted">
+              {study.solution}
+            </p>
+
             <p className="mt-6 text-sm font-medium">{study.role}</p>
+
+            {/* CTA Button */}
+            {study.url && (
+              <a
+                href={study.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center gap-2 rounded-full border border-line bg-canvas px-5 py-2 text-sm font-medium transition hover:bg-line/10"
+              >
+                Visit website
+              </a>
+            )}
           </Reveal>
+
           <Reveal>
             <div className="overflow-hidden rounded-2xl border border-line bg-canvas shadow-soft">
               <Image
-                src={study.image}
+                src={study.images[0]}
                 alt={`${study.title} project preview`}
                 width={1536}
                 height={960}
@@ -61,7 +84,9 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <div className="sticky top-28">
-              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Business summary</p>
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+                Business summary
+              </p>
               <ul className="mt-6 space-y-4 text-lg leading-8">
                 {study.summary.map((item) => (
                   <li key={item} className="border-b border-line pb-4">
@@ -73,8 +98,12 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           </Reveal>
           <Reveal>
             <div className="rounded-2xl border border-line bg-canvas p-6 sm:p-8">
-              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">What I built</p>
-              <p className="mt-6 text-lg leading-8 text-muted">{study.whatIBuilt}</p>
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+                What I built
+              </p>
+              <p className="mt-6 text-lg leading-8 text-muted">
+                {study.whatIBuilt}
+              </p>
               <p className="mt-8 text-2xl font-semibold">{study.outcome}</p>
             </div>
           </Reveal>
@@ -83,7 +112,9 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
       <section className="border-b border-line px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Architecture</p>
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+              Architecture
+            </p>
             <h2 className="mt-5 max-w-3xl text-balance text-4xl font-semibold leading-tight sm:text-5xl">
               A simple operating path with explicit ownership.
             </h2>
@@ -97,30 +128,16 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
           <DetailList title="Challenges" items={study.challenges} />
           <DetailList title="Results" items={study.results} />
-          <DetailList title="Tech Stack" items={study.stack} />
+          <DetailCard title="Tech Stack" items={study.stack} />
         </div>
       </section>
       <section className="px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Gallery</p>
-            <div className="mt-8 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-              <div className="overflow-hidden rounded-2xl border border-line bg-canvas">
-                <Image src={study.image} alt={`${study.title} dashboard`} width={1536} height={960} className="w-full object-cover" />
-              </div>
-              <div className="grid gap-4">
-                {["Workflow map", "Automation health"].map((label) => (
-                  <div key={label} className="grid-panel rounded-2xl border border-line bg-canvas p-5">
-                    <p className="text-sm font-medium">{label}</p>
-                    <div className="mt-8 space-y-3">
-                      <div className="h-3 w-3/4 rounded-full bg-ink/10 dark:bg-white/15" />
-                      <div className="h-3 w-1/2 rounded-full bg-ink/10 dark:bg-white/15" />
-                      <div className="h-20 rounded-xl border border-line bg-canvas/70" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+              Gallery
+            </p>
+            <GalleryModal images={study.images} title={study.title} />
           </Reveal>
         </div>
       </section>
@@ -131,15 +148,40 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
 function DetailList({ title, items }: { title: string; items: string[] }) {
   return (
     <Reveal>
-      <div>
+      <div className="rounded-xl border border-line bg-canvas p-6 shadow-sm">
         <h2 className="text-2xl font-semibold">{title}</h2>
+
         <ul className="mt-6 space-y-4 text-base leading-7 text-muted">
           {items.map((item) => (
-            <li key={item} className="border-b border-line pb-4">
+            <li
+              key={item}
+              className="border-b border-line pb-4 last:border-b-0 last:pb-0"
+            >
               {item}
             </li>
           ))}
         </ul>
+      </div>
+    </Reveal>
+  );
+}
+
+function DetailCard({ title, items }: { title: string; items: string[] }) {
+  return (
+    <Reveal>
+      <div className="rounded-xl border border-line bg-canvas p-6 shadow-sm">
+        <h2 className="text-2xl font-semibold">{title}</h2>
+
+        <div className="mt-6 flex flex-wrap gap-4">
+          {items.map((item) => (
+            <div
+              key={item}
+              className="rounded-full border border-line border border-line bg-canvas px-4 py-3 text-base text-muted shadow-sm"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
       </div>
     </Reveal>
   );

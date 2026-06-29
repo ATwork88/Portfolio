@@ -4,12 +4,19 @@ import Image from "next/image";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { MagneticButton } from "@/components/ui/magnetic-button";
+import { content } from "@/lib/data";
 
 export function Hero() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  const x = useSpring(useTransform(mouseX, [0, 1], [-14, 14]), { stiffness: 80, damping: 20 });
-  const y = useSpring(useTransform(mouseY, [0, 1], [-10, 10]), { stiffness: 80, damping: 20 });
+  const x = useSpring(useTransform(mouseX, [0, 1], [-14, 14]), {
+    stiffness: 80,
+    damping: 20,
+  });
+  const y = useSpring(useTransform(mouseY, [0, 1], [-10, 10]), {
+    stiffness: 80,
+    damping: 20,
+  });
 
   return (
     <section
@@ -22,8 +29,10 @@ export function Hero() {
     >
       <motion.div
         style={{ x, y }}
-        className="pointer-events-none absolute inset-x-0 top-20 mx-auto h-[420px] max-w-5xl rounded-full border border-line opacity-60 blur-3xl"
+        className="pointer-events-none absolute inset-x-0 top-20 mx-auto h-[420px] max-w-5xl rounded-full border border-line opacity-60  blur-3xl"
       />
+      {/* <div className="pointer-events-none absolute -right-24 top-28 h-72 w-72 rounded-full bg-rose-600/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-24 bottom-16 h-80 w-80 rounded-full bg-blue-600/25 blur-3xl" /> */}
       <div className="noise absolute inset-0 opacity-70" />
       <div className="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[1.04fr_0.96fr]">
         <div>
@@ -33,25 +42,35 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-7 text-sm font-medium uppercase tracking-[0.18em] text-muted"
           >
-            Ajay Thakur / PA, USA / Full Stack AI Developer
+            {content.hero.eyebrow}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.08,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="max-w-5xl text-balance text-6xl font-semibold leading-[0.94] tracking-normal sm:text-7xl lg:text-8xl"
           >
-            I build systems.
+            {content.hero.headline}
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.75,
+              delay: 0.18,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="mt-8 max-w-2xl"
           >
-            <p className="text-2xl font-medium text-ink sm:text-3xl">React. Python. AI. Automation.</p>
+            <p className="text-2xl font-medium text-ink sm:text-3xl">
+              {content.hero.subheadline}
+            </p>
             <p className="mt-5 text-lg leading-8 text-muted sm:text-xl">
-              I help startups and businesses replace manual processes with fast, secure, scalable software and intelligent automation.
+              {content.hero.description}
             </p>
           </motion.div>
           <motion.div
@@ -61,10 +80,11 @@ export function Hero() {
             className="mt-10 flex flex-col gap-3 sm:flex-row"
           >
             <MagneticButton href="/case-studies">
-              View Case Studies <ArrowRight className="ml-2" size={16} />
+              {content.hero.primaryCta}{" "}
+              <ArrowRight className="ml-2" size={16} />
             </MagneticButton>
             <MagneticButton href="/contact" variant="light">
-              Book a Call
+              {content.hero.secondaryCta}
             </MagneticButton>
           </motion.div>
         </div>
@@ -76,27 +96,31 @@ export function Hero() {
         >
           <motion.div
             style={{ x, y }}
-            className="grid-panel relative overflow-hidden rounded-[2rem] border border-line bg-canvas p-3 shadow-soft"
+            className="grid-panel sci-panel relative overflow-hidden rounded-[2rem] border border-line bg-canvas p-3 shadow-soft"
           >
             <Image
-              src="/ajay.png"
-              alt="Ajay Thakur"
+              src={content.hero.image}
+              alt={content.hero.imageAlt}
               width={700}
               height={500}
               priority
               className="aspect-[4/5] w-full rounded-[1.45rem] object-cover object-center grayscale-[12%]"
             />
-            <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/35 bg-white/78 p-4 text-black shadow-soft backdrop-blur-xl dark:border-white/10">
-              <p className="text-sm font-semibold">Top Rated Full Stack Developer</p>
-              <p className="mt-1 text-xs text-black/62">$60/hr / AI, Automation, SaaS, CRM</p>
+            <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/35 bg-white/78 p-4 text-white shadow-soft backdrop-blur-xl">
+              <p className="text-sm font-semibold ">
+                {content.hero.badgeTitle}
+              </p>
+              <p className="mt-1 text-xs text-black/62">
+                {content.hero.badgeText}
+              </p>
             </div>
           </motion.div>
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -right-3 top-8 hidden rounded-2xl border border-line bg-canvas px-4 py-3 text-sm shadow-soft sm:block"
+            className="absolute -right-3 top-8 hidden rounded-2xl border border-line bg-canvas px-4 py-3 text-sm   shadow-soft   sm:block"
           >
-            10K+ Upwork
+            {content.hero.floatingBadge}
           </motion.div>
         </motion.div>
         <motion.a
@@ -107,7 +131,7 @@ export function Hero() {
           className="absolute bottom-7 left-5 inline-flex items-center gap-2 text-sm text-muted hover:text-ink sm:left-8"
         >
           <ArrowDown size={15} />
-          Scroll
+          {content.hero.scrollLabel}
         </motion.a>
       </div>
     </section>
