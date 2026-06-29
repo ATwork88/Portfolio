@@ -17,8 +17,8 @@
     "email": "contact.ajaythakur.dev@gmail.com",
     "linkedinUrl": "null",
     "githubUrl": "https://github.com/ATwork88",
-    "upworkUrl": "null",
-    "calendarUrl": "https://cal.com",
+    "upworkUrl": "https://upwork.com",
+    "calendarUrl": "https://calendly.com/contact-ajaythakur-dev/30min",
     "copyright": "© 2026 Ajay Thakur"
   },
   "nav": [
@@ -93,7 +93,7 @@
     "AI Systems",
     "Automation Systems",
     "Full Stack Systems",
-    "Integration Architecture"
+    "System Architecture"
   ],
   "projects": [
     {
@@ -436,7 +436,7 @@
     {
       "slug": "colectif-system-architecture",
       "title": "Colectif - Multi-System Business Architecture",
-      "category": "Integration Architecture",
+      "category": "System Architecture",
       "url": null,
       "images": [
         "/gallery/colectif/01.png",
@@ -774,6 +774,138 @@
         "CRM Automation",
         "Real Estate Systems"
       ]
+    },
+    {
+      "slug": "ai-voice-quoting-agent-vapi-hubspot-zapier",
+      "title": "AI Voice Quoting Agent - Vapi + HubSpot + Zapier",
+      "category": "AI Systems",
+      "url": null,
+      "images": [
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/01.png",
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/02.png",
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/03.png",
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/04.png",
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/04.png"
+      ],
+      "role": "AI Voice Automation Engineer / Vapi & Zapier Developer",
+      "summary": [
+        "Automated inbound lead qualification and quote collection via AI voice calls.",
+        "Reduced manual handling of customer inquiries through structured voice automation.",
+        "Improved response time and eliminated missed handoffs in sales workflow.",
+        "Enhanced CRM data accuracy with fully structured call-to-lead mapping."
+      ],
+      "solution": "Built an AI voice agent system using Vapi to handle inbound calls, qualify leads, and collect structured quote data, then automatically sync results into HubSpot via Zapier workflows.",
+      "whatIBuilt": "Built an AI voice quoting agent for a signage company using Vapi as the conversational voice layer. The assistant collects structured customer data including name, phone, address, logo details, property type, and site survey requirements. It supports call transfer via transfer_call_tool in E.164 format when human assistance is needed. After each call, Zapier Webhooks capture Vapi event data and automatically create or update HubSpot contacts with mapped fields. A second Zap using Paths generates a structured call summary and sends it via Gmail for internal sales follow-up.",
+      "outcome": "Turned phone conversations into structured CRM leads with automated quote generation workflow.",
+      "architecture": [
+        "Vapi AI Voice Agent",
+        "Call conversation flow",
+        "transfer_call_tool (E.164 format)",
+        "Zapier Webhooks trigger",
+        "HubSpot CRM contact creation",
+        "Zapier Paths for routing logic",
+        "Gmail automated summaries"
+      ],
+      "challenges": [
+        "Structured data extraction from natural voice conversations",
+        "Reliable CRM field mapping from unstructured call data",
+        "Call transfer handling without breaking conversation flow",
+        "Ensuring data consistency across Zapier workflows"
+      ],
+      "results": [
+        "Automated lead qualification via phone calls",
+        "Reduced manual sales intake workload",
+        "Improved CRM data accuracy and structure",
+        "Faster response time for sales follow-up"
+      ],
+      "stack": [
+        "Vapi",
+        "AI Voice Agents",
+        "OpenAI",
+        "Zapier",
+        "Webhooks by Zapier",
+        "Paths by Zapier",
+        "HubSpot CRM",
+        "Gmail API",
+        "Lead Qualification",
+        "Call Automation",
+        "CRM Automation",
+        "Voice-to-CRM Pipeline"
+      ]
+    },
+    {
+      "slug": "creator-ambassador-program-ops-architecture",
+      "title": "Creator Ambassador Program Ops - Creator Operations Architecture",
+      "category": "System Architecture",
+      "url": null,
+      "images": [
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/01.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/02.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/03.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/04.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/05.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/06.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/07.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/08.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/09.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/10.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/11.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/12.png",
+        "/gallery/creator-ambassador-program-ops-airtable-make-zapier/13.png"
+      ],
+      "role": "Systems Architect / Automation Engineer",
+      "summary": [
+        "Designed a modular creator operations architecture for onboarding, tracking, and payouts.",
+        "Eliminated manual workflows across ambassador management, contracts, and reporting.",
+        "Improved operational clarity through structured lifecycle-based system design.",
+        "Enabled scalable automation across CRM, referrals, communication, and payments."
+      ],
+      "solution": "Designed a multi-system creator operations architecture using Airtable as the central data layer and Make.com + Zapier as orchestration engines, connecting onboarding, CRM, referrals, community access, performance tracking, and crypto payouts into a unified system.",
+      "whatIBuilt": "Architected a modular creator operations system with Airtable as the system of record and 10+ linked bases covering applications, onboarding, payouts, and performance analytics. Defined event-driven workflows across the ambassador lifecycle: application intake → CRM sync → contract onboarding → FirstPromoter referral activation → Discord role provisioning → performance tracking → payout execution via Radom API. Implemented Make.com for core lifecycle orchestration and Zapier for event routing, notifications, and integrations such as Klaviyo email flows and Discord automation. Integrated YouTube and Instagram APIs to sync creator performance metrics into Airtable dashboards for real-time visibility across 65 ambassadors and 101M+ views.",
+      "outcome": "Unified fragmented creator operations into a scalable, event-driven automation system for ambassador lifecycle management and payouts.",
+      "architecture": [
+        "Airtable (System of Record)",
+        "Airtable Interfaces (Dashboards)",
+        "Make.com (Orchestration Engine)",
+        "Zapier (Event Routing Engine)",
+        "Klaviyo (Email Automation Engine)",
+        "FirstPromoter (Referral System)",
+        "Discord (Community Access Layer)",
+        "Radom API (Crypto Payout Engine)",
+        "YouTube API (Analytics Ingestion)",
+        "Instagram API (Analytics Ingestion)"
+      ],
+      "challenges": [
+        "Coordinating multiple automation platforms without workflow conflicts",
+        "Ensuring data consistency across Airtable and external systems",
+        "Handling API reliability for payouts and analytics ingestion",
+        "Designing scalable lifecycle automation for large ambassador volumes"
+      ],
+      "results": [
+        "Automated end-to-end ambassador lifecycle management",
+        "Eliminated manual onboarding and payout processing",
+        "Centralized creator performance tracking and analytics",
+        "Improved operational scalability for ambassador program"
+      ],
+      "stack": [
+        "Airtable",
+        "Make.com",
+        "Zapier",
+        "Klaviyo",
+        "FirstPromoter",
+        "Discord API",
+        "Radom API",
+        "YouTube API",
+        "Instagram API",
+        "Webhooks",
+        "HTTP APIs",
+        "JSON",
+        "Airtable Scripting",
+        "Automation Architecture",
+        "CRM Automation",
+        "Affiliate Systems",
+        "Crypto Payments"
+      ]
     }
   ],
   "timeline": {
@@ -868,15 +1000,15 @@
       { "label": "Rate", "value": "$70/hr" }
     ],
     "story": [
-      "I am a Full Stack AI Developer with professional experience building modern web applications, AI-powered systems, workflow automations, and scalable SaaS platforms for startups, businesses, and growing organizations.",
-      "My work spans the full product lifecycle: designing clean interfaces, building high-performance backend APIs, integrating third-party services, and turning operational workflows into reliable software. On the backend, I use Python, FastAPI, API-first design, and clean architecture. On the frontend, I build responsive product experiences with React, Next.js, Tailwind CSS, and modern JavaScript frameworks.",
-      "I also integrate AI into real products through OpenAI APIs, automation workflows, and orchestration tools like n8n and Make.com. Beyond custom applications, I work with WordPress, Laravel, Webflow, and PHP-based systems for CMS-driven products, custom admin panels, and faster business delivery."
+      "I am a Full Stack AI Developer specializing in AI-powered web applications, intelligent automation, and scalable SaaS platforms. I help startups and businesses transform ideas into production-ready software with modern technologies and AI-driven solutions.",
+      "My experience spans the complete product lifecycle—from designing intuitive user interfaces and developing high-performance backend APIs to architecting cloud-native applications, integrating third-party services, and building secure, scalable systems. I primarily work with React, Next.js, TypeScript, Python, FastAPI, PostgreSQL, and modern API-first architectures.",
+      "Beyond traditional software development, I build AI assistants, AI agents, RAG applications, and workflow automation using OpenAI, Claude, Gemini, LangChain, LangGraph, n8n, Make.com, and MCP. I also develop CMS-driven platforms with WordPress, Laravel, PHP, and Webflow while integrating payment gateways, authentication systems, and cloud services to deliver complete end-to-end products."
     ],
     "principles": [
-      "Build products end to end, from clean user interfaces to secure backend APIs.",
-      "Use AI and automation to remove repetitive work, not to add complexity.",
-      "Design systems around performance, security, maintainability, and responsive UX.",
-      "Act as a long-term technical partner who owns outcomes, not just tasks."
+      "Build complete products from concept to production with clean, scalable architecture.",
+      "Use AI, automation, and intelligent workflows to solve real business problems.",
+      "Prioritize performance, security, maintainability, accessibility, and exceptional user experience.",
+      "Deliver production-ready software with clear communication and long-term technical partnership."
     ],
     "historyTitle": "Employment History",
     "history": [
@@ -895,28 +1027,52 @@
     "skills": [
       "React",
       "Next.js",
-      "JavaScript",
       "TypeScript",
+      "Tailwind CSS",
+      "Three.js",
       "Python",
       "FastAPI",
-      "REST APIs",
+      "Node.js",
+      "Express.js",
+      "Laravel",
+      "PHP",
       "C#",
       ".NET",
-      "OpenAI API",
-      "AI Automation",
+      "REST APIs",
+      "GraphQL",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Supabase",
+      "Firebase",
+      "AWS",
+      "OpenAI",
+      "Anthropic Claude",
+      "Google Gemini",
+      "LangChain",
+      "MCP",
+      "RAG",
+      "Vector Databases",
+      "AI Agents",
+      "AI Chatbots",
+      "AI Voice Agents",
       "n8n",
       "Make.com",
-      "SaaS Architecture",
-      "MVP Development",
+      "Zapier",
+      "Airtable",
+      "Hubspot",
+      "GoHighLevel",
+      "Zoho CRM",
+      "Workflow Automation",
+      "CRM Automation",
+      "Monday.com",
+      "API Integrations",
       "Stripe",
-      "PayPal",
-      "Google Maps API",
-      "PHP",
-      "WordPress",
-      "Laravel",
-      "Webflow",
-      "Tailwind CSS",
-      "Bootstrap"
+      "Twilio",
+      "Resend",
+      "SendGrid",
+      "WordPress"
     ]
   },
   "contact": {

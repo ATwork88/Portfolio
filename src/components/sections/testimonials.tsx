@@ -4,23 +4,28 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { useState } from "react";
 import { Reveal } from "@/components/ui/reveal";
-import { testimonials } from "@/lib/data";
+import { content, testimonials } from "@/lib/data";
 
 export function Testimonials() {
   const [active, setActive] = useState(0);
   const testimonial = testimonials[active];
 
   function move(direction: number) {
-    setActive((current) => (current + direction + testimonials.length) % testimonials.length);
+    setActive(
+      (current) =>
+        (current + direction + testimonials.length) % testimonials.length,
+    );
   }
 
   return (
     <section className="border-b border-line px-5 py-24 sm:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <Reveal>
-          <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Client Reviews</p>
+          <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">
+            {content.testimonialsSection.eyebrow}
+          </p>
           <h2 className="mt-5 max-w-xl text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-            What clients say after the manual work disappears.
+            {content.testimonialsSection.headline}
           </h2>
           <div className="mt-8 flex gap-2">
             <button
@@ -52,7 +57,9 @@ export function Testimonials() {
                 exit={{ opacity: 0, x: -18 }}
                 transition={{ duration: 0.35 }}
               >
-                <p className="mt-8 text-balance text-2xl font-medium leading-10 sm:text-3xl">{testimonial.quote}</p>
+                <p className="mt-8 text-balance text-2xl font-medium leading-10 sm:text-3xl">
+                  {testimonial.quote}
+                </p>
                 <div className="mt-10 border-t border-line pt-6">
                   <p className="font-semibold">{testimonial.name}</p>
                   <p className="mt-1 text-sm text-muted">{testimonial.title}</p>
