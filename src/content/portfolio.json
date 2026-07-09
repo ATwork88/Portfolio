@@ -785,7 +785,7 @@
         "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/02.png",
         "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/03.png",
         "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/04.png",
-        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/04.png"
+        "/gallery/ai-voice-quoting-agent-vapi-hubspot-zapier/05.png"
       ],
       "role": "AI Voice Automation Engineer / Vapi & Zapier Developer",
       "summary": [
@@ -833,6 +833,62 @@
         "Voice-to-CRM Pipeline"
       ]
     },
+    
+{
+  "slug": "client-onboarding-automation-jotform-monday",
+  "title": "Client Onboarding Automation - JotForm & Monday.com Workflow Architecture",
+  "category": "Automation System Architecture",
+  "url": null,
+  "images": ["/gallery/client onboarding/01.png","/gallery/client onboarding/02.png",
+"/gallery/client onboarding/03.png","/gallery/client onboarding/04.png"],
+  "role": "JotForm & Monday.com Automation Specialist",
+  "summary": [
+    "Designed a paperless client onboarding automation system for a digital marketing agency.",
+    "Eliminated repetitive manual data entry and document handling across onboarding workflows.",
+    "Improved team response time by automatically routing complete client information into operational workflows.",
+    "Reduced onboarding errors through structured forms, validation, and automated data mapping."
+  ],
+  "solution": "Designed a client onboarding automation architecture using JotForm as the intake layer and Monday.com as the operational management system. Connected multilingual onboarding forms, document collection, conditional workflows, notifications, and structured data mapping into a seamless client activation process.",
+  "whatIBuilt": "Built a complete paperless client onboarding system for a digital marketing agency by connecting JotForm with Monday.com. Designed a multi-page multilingual onboarding form with progress tracking, conditional logic, document uploads, and automated notifications to collect client company information and access credentials for marketing platforms including Google My Business, Google Tag Manager, Google Search Console, and Microsoft Clarity. Implemented the JotForm-to-Monday.com integration to automatically convert submissions into structured board items, mapping form responses into the correct Monday.com columns so internal teams receive organized client data immediately and can begin execution without manual processing.",
+  "outcome": "Transformed manual client onboarding processes into a structured automation workflow for faster client activation and improved operational efficiency.",
+  "architecture": [
+    "JotForm (Client Intake Layer)",
+    "Monday.com (Operations Management System)",
+    "JotForm Conditional Logic Engine",
+    "Document Upload Workflow",
+    "Notification Automation Layer",
+    "Data Mapping & Synchronization Layer",
+    "Multilingual Form Experience"
+  ],
+  "challenges": [
+    "Designing a complex multi-step onboarding experience with conditional paths",
+    "Ensuring accurate data mapping between JotForm submissions and Monday.com columns",
+    "Handling multilingual form requirements while maintaining usability",
+    "Managing document uploads and client access information securely",
+    "Reducing duplicate data entry across onboarding operations"
+  ],
+  "results": [
+    "Automated end-to-end client onboarding workflow",
+    "Eliminated manual form processing and duplicate data entry",
+    "Centralized client information inside Monday.com for team execution",
+    "Improved onboarding speed and operational visibility",
+    "Created a scalable onboarding framework for future clients"
+  ],
+  "stack": [
+    "JotForm",
+    "Monday.com",
+    "JotForm Monday Integration",
+    "Conditional Logic",
+    "Workflow Automation",
+    "Client Onboarding Automation",
+    "Multilingual Forms",
+    "Document Uploads",
+    "Data Mapping",
+    "Notifications",
+    "Form Automation",
+    "API Integrations"
+  ]
+},
     {
       "slug": "creator-ambassador-program-ops-architecture",
       "title": "Creator Ambassador Program Ops - Creator Operations Architecture",
@@ -906,7 +962,140 @@
         "Affiliate Systems",
         "Crypto Payments"
       ]
-    }
+    },
+    {
+  "slug": "crypto-affiliate-subscription-ops-automation",
+  "title": "Crypto Affiliate & Subscription Ops - Automation Architecture",
+  "category": "Automation System Architecture",
+  "url": null,
+  "images": ["/gallery/crypto/01.png",
+  "/gallery/crypto/02.png",
+  "/gallery/crypto/03.png",
+  "/gallery/crypto/04.png",
+  "/gallery/crypto/05.png",
+  "/gallery/crypto/06.png"
+],
+  "role": "Automation Architect / Airtable, Make.com, Zapier & Discord Specialist",
+  "summary": [
+    "Designed a subscription and affiliate operations automation system for a crypto trading community.",
+    "Eliminated repetitive manual processes across payments, onboarding, referrals, and member management.",
+    "Improved operational reliability through automated workflows, error handling, and edge-case coverage.",
+    "Enabled scalable membership operations with centralized tracking and automated lifecycle management."
+  ],
+  "solution": "Designed a multi-platform operations automation architecture using Airtable as the central data layer and Make.com + Zapier as workflow orchestration engines, connecting subscription management, crypto payments, affiliate tracking, onboarding, contracts, and community access into a unified membership ecosystem.",
+  "whatIBuilt": "Built the complete back-office automation system for Gem Hunters, a crypto trading community with paid memberships and an affiliate program. Architected Airtable as the operational system of record with dedicated subscription and affiliate bases, interface dashboards tracking 700+ sales, ETH revenue, member activity, and referral performance. Implemented Airtable scripting for payment tracking, refund workflows, renewal reminders, and operational automation. Designed Make.com and Zapier workflows to automate the full member lifecycle: Discord new member events → Airtable synchronization → GoHighLevel CRM updates → quiz and contract approval through SignWell → Discord role provisioning → FirstPromoter affiliate account creation. Integrated Google Forms and JotForm application flows to create a fully automated membership onboarding and referral management system.",
+  "outcome": "Unified fragmented crypto membership operations into a scalable automation system for subscriptions, affiliate management, payments, and community access.",
+  "architecture": [
+    "Airtable (System of Record)",
+    "Airtable Interfaces (Operations Dashboards)",
+    "Make.com (Workflow Orchestration Engine)",
+    "Zapier (Integration Automation Engine)",
+    "Discord (Community Access Layer)",
+    "GoHighLevel (CRM & Communication Layer)",
+    "SignWell (Contract Automation Layer)",
+    "FirstPromoter (Affiliate Management System)",
+    "JotForm (Application Intake)",
+    "Google Forms (Application Intake)",
+    "Crypto Payment Tracking Layer"
+  ],
+  "challenges": [
+    "Synchronizing member data across multiple platforms",
+    "Automating crypto subscription and payment workflows",
+    "Preventing missed transactions and manual processing errors",
+    "Managing complex onboarding flows across CRM, contracts, affiliates, and Discord access",
+    "Creating reliable automation handling edge cases and failed events"
+  ],
+  "results": [
+    "Automated end-to-end membership onboarding and affiliate lifecycle management",
+    "Centralized subscription, sales, and revenue tracking in Airtable",
+    "Reduced manual operations across payments, contracts, and member management",
+    "Improved response time and eliminated missed workflow handoffs",
+    "Created a scalable foundation for crypto community growth"
+  ],
+  "stack": [
+    "Airtable",
+    "Make.com",
+    "Zapier",
+    "Discord API",
+    "GoHighLevel",
+    "SignWell",
+    "FirstPromoter",
+    "JotForm",
+    "Google Forms",
+    "Airtable Interfaces",
+    "Airtable Scripting",
+    "Webhooks",
+    "JSON",
+    "API Integrations",
+    "Automation Architecture",
+    "CRM Automation",
+    "Affiliate Systems",
+    "Crypto Payments",
+    "ETH"
+  ]
+},
+{
+  "slug": "hiring-recruitment-automation-ghl-make-zapier",
+  "title": "Hiring & Recruitment Automation - Recruitment Operations Architecture",
+  "category": "Automation System Architecture",
+  "url": null,
+  "images": ["/gallery/hiring/01.png","/gallery/hiring/01.png"],
+  "role": "Automation Engineer / Recruitment & Onboarding Workflow Architect",
+  "summary": [
+    "Designed an end-to-end recruitment automation system for managing candidate intake, evaluation, communication, and onboarding.",
+    "Eliminated repetitive manual hiring tasks across applications, candidate routing, and team coordination.",
+    "Improved recruitment response times through automated communication and workflow triggers.",
+    "Reduced operational risk with structured pipelines, automated handoffs, and edge-case handling."
+  ],
+  "solution": "Designed a recruitment operations automation architecture using GoHighLevel as the CRM and applicant pipeline system, with Make.com and Zapier as orchestration engines. Connected application intake, candidate scoring, communication workflows, hiring team tasks, and onboarding processes into a unified automated recruitment system.",
+  "whatIBuilt": "Designed and built an end-to-end hiring and recruitment automation system for an agency using GoHighLevel, Make.com, and Zapier. Architected the workflow in Miro before implementation, defining the complete candidate lifecycle from application submission to onboarding. Integrated JotForm application forms with GoHighLevel pipelines to automatically capture applicants, score candidates, apply tags, and move them through recruitment stages. Built Make.com and Zapier automations to handle workflow logic, including automated email and SMS communication, candidate routing based on role and qualification, Todoist task creation for hiring teams, and Discord access provisioning with role assignment for accepted hires. Created a fully automated recruitment workflow where applications, interviews, internal tasks, and onboarding steps operate seamlessly across multiple platforms.",
+  "outcome": "Unified recruitment operations into a scalable automation system that manages candidate workflows, communication, and onboarding with minimal manual intervention.",
+  "architecture": [
+    "GoHighLevel (CRM & Applicant Tracking System)",
+    "Make.com (Workflow Orchestration Engine)",
+    "Zapier (Automation & Integration Layer)",
+    "JotForm (Application Intake Layer)",
+    "Todoist (Hiring Team Task Management)",
+    "Discord (Team Access & Role Management)",
+    "Miro (Workflow Architecture & Process Design)",
+    "Email Automation Layer",
+    "SMS Automation Layer"
+  ],
+  "challenges": [
+    "Designing a complete candidate lifecycle workflow across multiple systems",
+    "Maintaining accurate candidate status synchronization between platforms",
+    "Automating personalized communication without losing workflow control",
+    "Routing applicants based on role requirements and qualification criteria",
+    "Handling recruitment edge cases and failed automation events"
+  ],
+  "results": [
+    "Automated candidate intake, scoring, routing, and onboarding workflows",
+    "Reduced manual recruitment operations across applications and communications",
+    "Improved hiring team response time through automated task creation and notifications",
+    "Centralized applicant tracking and recruitment visibility in GoHighLevel",
+    "Created a scalable hiring automation framework for agency growth"
+  ],
+  "stack": [
+    "GoHighLevel",
+    "GHL",
+    "Make.com",
+    "Zapier",
+    "JotForm",
+    "Todoist",
+    "Discord",
+    "Miro",
+    "Applicant Tracking Systems",
+    "Recruitment Automation",
+    "CRM Automation",
+    "Email Automation",
+    "SMS Automation",
+    "Onboarding Automation",
+    "Webhooks",
+    "API Integrations",
+    "Workflow Architecture"
+  ]
+}
+
   ],
   "timeline": {
     "eyebrow": "Operating Model",
